@@ -1,0 +1,6 @@
+<%= form_for Tweet.new do |f| %>
+    <%= f.label :ツイート %>
+    <%= f.text_area :tweet %>
+    <%= f.submit :送信 %>
+    <%= f.hidden_field :user_id, :value => @user_id %>
+<% end %>
